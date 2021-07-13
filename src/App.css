@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --primary-white : #fff;
+  --primary-orange : #f9ab00;
+  --primary-dark : rgba(255, 255, 255, 0);
+}
+/******************************************NAVBAR*****************************************************/
+
+nav a.nav-link{
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 12px;
+  margin-left: 12px;
+  color: var(--primary-white) !important;
+  border-top: 3px solid var(--primary-dark);
+} 
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 3px solid var(--primary-orange);  
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 3px solid var(--primary-orange);  
+}
